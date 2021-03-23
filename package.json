@@ -1,0 +1,10 @@
+{
+	"name": "cors",
+	"version": "1.0.0",
+	"description": "Cors anywhere!",
+	"author": "tiencoffee",
+	"dependencies": {
+		"node-fetch": ">=2.6.1"
+	},
+	"license": "MIT"
+}
