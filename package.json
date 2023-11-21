@@ -9,6 +9,6 @@
 	},
 
 	"dependencies": {
-		"node-fetch": "^9.5.0"
+		"node-fetch": "^10.1.0"
 	}
 }
