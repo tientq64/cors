@@ -1,11 +1,11 @@
-const fetch = require("node-fetch");
+var fetch = require("node-fetch");
 
 module.exports = async (req, res) => {
-	const { type, url } = req.query;
+	var { type, url } = req.query;
 
 	url = decodeURIComponent(url);
 
-	const data = await (await fetch(url))[type]();
+	var data = await (await fetch(url))[type]();
 
 	res.setHeader("Access-Control-Allow-Credentials", true);
 	res.setHeader("Access-Control-Allow-Origin", "*");
@@ -13,4 +13,4 @@ module.exports = async (req, res) => {
 	if (type !== "json") type = "send";
 
 	res[type](data);
-}
+};
