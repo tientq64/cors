@@ -10,11 +10,14 @@ module.exports = async (req, res) => {
 	res.setHeader("Access-Control-Allow-Credentials", true);
 	res.setHeader("Access-Control-Allow-Origin", "*");
 
-	if (type !== "json") type = "send";
+	// if (type !== "json") type = "send";
 
 	// res[type](data);
 
+	res.write("1. ");
 	res.write(type);
+	res.write("\n2. ");
 	res.write(url);
+	res.write("\n3. ");
 	res.end(req.query.url);
 };
