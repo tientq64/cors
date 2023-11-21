@@ -14,7 +14,7 @@ module.exports = async (req, res) => {
 
 	// res[type](data);
 
-	res.wirte(type);
-	res.wirte(url);
+	res.write(type);
+	res.write(url);
 	res.end(req.query.url);
 };
