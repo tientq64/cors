@@ -14,5 +14,7 @@ module.exports = async (req, res) => {
 
 	// res[type](data);
 
-	res.text(type, url, req.query.url);
+	res.send(type);
+	res.send(url);
+	res.send(req.query.url);
 };
