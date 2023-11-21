@@ -3,6 +3,11 @@
 	"version": "1.1.0",
 	"description": "Cors anywhere!",
 	"author": "tientq64",
+
+	"engines": {
+		"node": ">=20.x"
+	},
+
 	"dependencies": {
 		"node-fetch": "^9.5.0"
 	}
